@@ -8,6 +8,7 @@ venv:
 	pip install -r requirements.txt; \
 
 load:
+	source venv/bin/activate; \
 	cd input; \
 	kaggle competitions download -c g-research-crypto-forecasting; \
 	unzip g-research-crypto-forecasting.zip
